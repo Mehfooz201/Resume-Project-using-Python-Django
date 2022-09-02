@@ -1,0 +1,8 @@
+from winreg import REG_QWORD
+from django.shortcuts import render
+
+# Create your views here.
+
+def skills(request):
+    context = {'skills' : 'active'}
+    return render(request, 'edu/skills.html', context)
